@@ -4,7 +4,7 @@ import numpy as np
 from sklearn import preprocessing, cross_validation, svm
 from sklearn.linear_model import LinearRegression
 
-class ml:
+class lr:
 
     def regressionTestOne(self):
         # Getting ticker from Quandl
@@ -81,15 +81,15 @@ class ml:
         print("Predicted accuracy: ",accuracy)
 
     def main(self):
-        #self.regressionOne()
+        #self.regressionTestOne()
         #print("\n")
-        #self.regressionTwo()
+        #self.regressionTestTwo()
         #print("\n")
-        self.regressionThree()
+        self.regressionTestThree()
 
 
 
 if __name__ == '__main__':
-    mlreg = ml()
-    mlreg.main()
+    linearReg = lr()
+    linearReg.main()
 
